@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>:: Basketball Scoreboard</title>
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="home" id="home">
+          <h1>Home</h1>
+          <div class="home-scorecard" id="home-scorecard">0</div>
+          <div class="home-btn">
+            <button class="score-btn" onclick="hAddone()">+1</button>
+            <button class="score-btn" onclick="hAddtwo()">+2</button>
+            <button class="score-btn" onclick="hAddthree()">+3</button>
+          </div>
+        </div>
+
+        <div class="guest" id="guest">
+          <h1>Guest</h1>
+          <div class="guest-scorecard" id="guest-scorecard">0</div>
+          <div class="guest-btn">
+            <button class="score-btn" onclick="gAddone()">+1</button>
+            <button class="score-btn" onclick="gAddtwo()">+2</button>
+            <button class="score-btn" onclick="gAddthree()">+3</button>
+          </div>
+        </div>
+      </div>
+      <div id="winnertext" class="winnertext">Let the game begain!</div>
+      <div class="reset-timer">
+        <div class="timer" id="timer">00:30</div>
+        <div class="start-stop">
+          <button class="timer-btn" onclick="startTimer()">
+            <span class="material-icons-outlined"> play_arrow </span>
+          </button>
+          <button class="timer-btn" onclick="stopTimer()">
+            <span class="material-icons-outlined"> stop </span>
+          </button>
+        </div>
+      </div>
+      <div class="reset-score">
+        <button class="reset-btn" onclick="resetScore()">New Game</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
